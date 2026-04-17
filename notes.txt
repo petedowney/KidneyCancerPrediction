@@ -1,0 +1,13 @@
+
+
+make the data in one byte instead of long
+then divides at run time
+
+
+
+L2 regularization - penalizes having 0 order leading terms
+
+Instance regularization to combat small batch sizes
+
+
+Use SmotE potentialy
