@@ -1,8 +1,6 @@
 import torch
 from torch.utils.data import Dataset
-import numpy as np
-import pydicom
-from scipy.ndimage import zoom
+import sys
 
 class DCMDataset(Dataset):
     """
@@ -30,7 +28,6 @@ class DCMDataset(Dataset):
         """
         Prints the estimated memory usage of the preloaded dataset.
         """
-        import sys
         total_bytes = 0
 
         for volume, label, patient_id in self.preloaded_data.values():
